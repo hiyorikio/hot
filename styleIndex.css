@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+body {
+  background: #19232c;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: contents;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  width: 16vw;
+  height: 10vh;
+  line-height: 100%;
+  margin: 20px;
+  background-color: #ff4655;
+}
+
+h2 {
+  font-size: 3em;
+  line-height: 100%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.MainDiv {
+  position: relative;
+  width: 100%;
+  height: 95vh;
+  overflow: hidden;
+}
+
+.MainDiv p {
+  font-size: 0.9em; /* Убрали пробел */
+  text-align: center;
+  width: 40%;
+  line-height: 105%;
+}
+
+.MainDiv img {
+  width: 45%;
+}
+
+.videoFon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.NavigatDiv {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.ContentBlock {
+  width: 100%;
+  min-height: 80vh;
+  height: auto;
+  padding: 20px; /* Отступы внутри блока */
+  font-family: sans-serif;
+}
+
+/*Стиль для карточек */
+
+.cardsDiv {
+  display: flex; /* Располагаем карточки в ряд */
+  gap: 30px; /* Расстояние между карточками */
+  justify-content: center; /* Центрируем по горизонтали */
+  flex-wrap: wrap; /* Чтобы на мобильных не ломались */
+  margin-top: 10px;
+}
+
+.cardBasic {
+  position: relative;
+  background: rgb(46, 64, 82, 0.3);
+  border-left: 4px solid #e32636;
+  border-radius: 20px;
+  padding: 30px;
+  transition: all 0.3s;
+  width: 290px;
+  height: 350px;
+  line-height: 120%;
+  overflow: hidden; /* Добавляем, чтобы углы картинки скруглялись вместе с карточкой, если border-radius есть */
+}
+
+/*Стиль при наведении */
+.cardBasic:hover {
+  transform: translateY(-5px);
+  background: rgb(40, 40, 55, 0.8);
+}
+
+.cardBasic h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #ff4655;
+}
+
+.cardBasic p {
+  margin-bottom: 12px;
+  font-size: 0.9em;
+  color: #b0b0b0;
+}
+
+.cardLink {
+  color: #ff4655; /* Красная ссылка */
+  text-decoration: none;
+  position: absolute;
+  bottom: 25px;
+  transition: 0.3s;
+}
+
+.cardLink:hover {
+  color: #c41c2a;
+}
+
+.cardIcon {
+  margin: -30px -30px 15px -30px;
+  height: 135px;
+}
+
+.cardIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Заполняет блок без растягивания и сплющивания */
+  display: block; /* Убирает лишние отступы под картинкой, свойственные строчным элементам */
+}
+
+/*Карточки патчей*/
+
+.cardPatch {
+  position: relative;
+  background: rgb(46, 64, 82, 0.3);
+  border-radius: 20px;
+  border-top: 4px solid #e32636;
+  padding: 20px;
+  width: 330px;
+  height: 395px;
+  line-height: 120%;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.cardPatch:hover {
+  transform: translateY(-5px);
+  background: rgb(40, 40, 55, 0.8);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  font-size: 0.65em;
+  margin-left: 10px;
+  padding: 10px;
+  width: 100%;
+  gap: 5px;
+  position: absolute;
+  top: 160px;
+  z-index: 2;
+}
+
+.cardHeader span {
+  background: #ff4655;
+  border-radius: 30px;
+  padding: 0 8px;
+  font-weight: 700;
+}
+
+.cardPatch h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.cardPatch p {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.cardIconPatch {
+  position: relative;
+  margin: -30px -30px 15px -30px;
+  height: 200px;
+}
+
+.cardIconPatch img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Заполняет блок без растягивания и сплющивания */
+  display: block; /* Убирает лишние отступы под картинкой, свойственные строчным элементам */
+}
+
+.cardIconPatch video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Заполняет блок без растягивания и сплющивания */
+  display: block; /* Убирает лишние отступы под картинкой, свойственные строчным элементам */
+}
+
+.cardsDivPatch {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  padding-bottom: 15px;
+  margin-top: 10px;
+}

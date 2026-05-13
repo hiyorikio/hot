@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  color: white;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(135deg, #fff 0%, #ff4655 100%);
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+.main-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff4655, transparent);
+}
+
+body {
+  background-image: url("https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/122e6caea8b2a2dbb6d6e71eea4e24effab342da-5120x574.png?accountingTag=VAL&auto=format&fit=fill&q=80&w=5120");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #0f1923;
+  margin: 0;
+  padding: 0;
+}
+
+.Content {
+  padding: 30px;
+}
+
+.welcom {
+  background: rgba(25, 35, 44, 0.8);
+  backdrop-filter: blur(10px);
+  font-size: 1rem;
+  line-height: 120%;
+  padding: 20px 30px;
+  border-radius: 16px;
+  border-left: 4px solid #ff4655;
+  margin-bottom: 50px;
+  transition: all 0.3s ease;
+}
+
+.welcom:hover {
+  transform: translateX(8px);
+  box-shadow: 0 5px 20px rgba(255, 70, 85, 0.2);
+}
+
+.ContentCards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.CardBasic {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: rgb(46, 64, 82, 0.3);
+  border-left: 4px solid #e32636;
+  border-radius: 20px;
+  padding: 20px;
+  transition: all 0.3s;
+  width: 270px;
+  height: auto;
+  line-height: 120%;
+  overflow: hidden;
+}
+
+.CardBasic:hover {
+  background: rgb(40, 40, 55, 0.8);
+  transform: scale(1.05);
+}
+
+.CardBasic h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.CardBasic p {
+  margin-bottom: 12px;
+  font-size: 0.8em;
+  color: #b0b0b0;
+}
+
+/* Контейнер с информацией - растягивается, чтобы кнопка ушла вниз */
+.cardInfo {
+    flex: 1;
+}
+
+.external-link {
+    color: #ff4655;
+    margin-top: 10px;
+}
+
+/* Эффект при нажатии (становится темнее) */
+.external-link:active {
+    color: #c72a3a;
+}
+
+.image {
+  margin: -30px -30px -14px -30px;
+  position: relative;
+}
+
+.image img {
+  width: 293px;
+  height: 391px;
+  object-fit: cover;
+  display: block;
+}
+
+.SPNRole {
+  background: #ff4655;
+  position: absolute;
+  border-radius: 30px;
+  padding: 0 10px;
+  font-weight: 600;
+  font-size: 0.8em;
+  bottom: 15px;
+  left: 15px;
+}
+
+.Filters {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.FilterBtn {
+  text-decoration: none;
+  padding: 8px 20px;
+  background: #19232c;
+  border: 1px solid #333;
+  border-radius: 20px;
+  transition: 0.3s;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.FilterBtn:hover,
+.FilterBtn.active {
+  background: #ff4655;
+  color: white;
+}

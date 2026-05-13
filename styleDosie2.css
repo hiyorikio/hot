@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    background: url("https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/122e6caea8b2a2dbb6d6e71eea4e24effab342da-5120x574.png?accountingTag=VAL&auto=format&fit=fill&q=80&w=5120") no-repeat;
+    background-size: 100%;
+    background-color: #0f1923;
+}
+
+.Content {
+    padding: 40px 60px;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(135deg, #fff 0%, #ff4655 100%);
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+.main-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff4655, transparent);
+}
+
+.welcome {
+  background: rgba(25, 35, 44, 0.8);
+  backdrop-filter: blur(10px);
+  font-size: 1rem;
+  line-height: 120%;
+  padding: 20px 30px;
+  border-radius: 16px;
+  border-left: 4px solid #ff4655;
+  margin-bottom: 50px;
+  transition: all 0.3s ease;
+}
+
+.welcome:hover {
+  transform: translateX(8px);
+  box-shadow: 0 5px 20px rgba(255, 70, 85, 0.2);
+}
+
+
+/* Основной контейнер консоли */
+.console-wrapper {
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #0f0;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Шапка окна (как у программы) */
+.console-header {
+    background-color: #222;
+    color: #888;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Область вывода текста */
+.console-body {
+    height: 70vh;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.console-body p {
+    margin: 0;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+/* Строка ввода */
+.console-input-area {
+    display: flex;
+    padding: 15px 20px;
+    background-color: #0a0a0a;
+    border-top: 1px dashed #333;
+}
+
+.prompt {
+    color: #fff;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+#console-input {
+    background: transparent;
+    border: none;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+
+/* Кастомные стили для сообщений */
+.user-cmd {
+    color: #fff;
+    margin-top: 10px !important;
+}
+
+.sys-msg {
+    color: #0aaa0a;
+}
+
+.error-msg {
+    color: #ff4655; /* Красный цвет VALORANT */
+}
+
+.success-msg {
+    color: #00ffff;
+}
+
+.highlight {
+    color: #fff;
+    font-weight: bold;
+}

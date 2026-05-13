@@ -1,0 +1,133 @@
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    background: rgba(25, 35, 44, 0.85);
+    backdrop-filter: blur(8px); /* Размытие заднего фона (эффект стекла) */
+    border-bottom: 1px solid rgba(255, 70, 85, 0.3); 
+    padding: 0 40px;
+}
+
+.header-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+/* Логотип */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-link {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease;
+}
+
+.logo-link:hover {
+    opacity: 0.9;
+}
+
+.logo-accent {
+    color: #ff4655;
+}
+
+/* Навигация */
+.main-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 70, 85, 0.15);
+    color: #ff4655;
+    border-bottom-color: #ff4655;
+}
+
+/* Активная страница */
+.nav-link.active {
+    color: #ff4655;
+    border-bottom-color: #ff4655;
+    background-color: rgba(255, 70, 85, 0.1);
+}
+
+/* ПОДВАЛ */
+.div-footer {
+    background: #0f151c;
+    border-top: 3px solid #ff4655;
+    padding: 30px 5% 0;
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 1.1rem;
+    color: #ff4655;
+    letter-spacing: 2px;  /*Увеличивает расстояние между буквами */
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-desc {
+    font-size: 0.85rem;
+    color: #9aaebf;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 10px auto; /*Верх, плаво, низ, лево */
+}
+
+.divider {
+    width: 50vw;
+    height: 2px;
+    background: #ff4655;
+    margin: 10px auto;
+}
+
+.copyright {
+    font-size: 0.7rem;
+    color: #6a7f8f;
+    line-height: 150%;
+}
+
+.disclaimer {
+    font-size: 0.7em;
+    color: #394a57;
+    margin: 10px auto 0 auto;
+}
